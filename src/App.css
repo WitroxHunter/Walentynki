@@ -1,0 +1,80 @@
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --button-color-border: white;
+}
+
+button {
+  border-radius: 12px;
+  border: 1px solid transparent;
+  padding: 0.7em 1.3em;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  border: 2px solid var(--button-color-border);
+  transition: 0.3s;
+  position: relative;
+}
+
+.Tak {
+  z-index: 2; /* Ustawienie wyższej wartości z-index */
+  background-color: #00d207;
+  margin-right: 4px;
+}
+
+.Tak:hover {
+  background-color: #00ab06;
+  box-shadow: white 0px 0px 15px;
+}
+
+.Nie {
+  z-index: 1;
+  background-color: #ff0000;
+  margin-left: 4px;
+}
+
+.Nie:hover {
+  background-color: #ff2323;
+  box-shadow: white 0px 0px 15px;
+}
+
+@media (max-width: 800px) {
+  .gif {
+    width: 80%;
+  }
+}
+
+.gif {
+  box-shadow: black 0px 0px 7px;
+  border-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2em;
+  line-height: 1.1;
+  text-shadow: black 0px 0px 5px;
+}
+
+#tekst {
+  margin-top: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 1.3em;
+  color: rgb(0, 0, 0);
+}
